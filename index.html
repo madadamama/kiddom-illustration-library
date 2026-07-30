@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiddom Illustration Library</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1 class="site-title">Kiddom Illustration Library</h1>
+      <nav class="view-nav" aria-label="Library views">
+        <button
+          type="button"
+          class="view-nav__btn is-active"
+          data-view="icon"
+          aria-pressed="true"
+        >
+          Icon
+        </button>
+        <button
+          type="button"
+          class="view-nav__btn"
+          data-view="list"
+          aria-pressed="false"
+        >
+          List
+        </button>
+        <button
+          type="button"
+          class="view-nav__btn"
+          data-view="search"
+          aria-pressed="false"
+        >
+          Search
+        </button>
+      </nav>
+    </header>
+
+    <main class="site-main">
+      <section
+        id="view-icon"
+        class="view view--icon is-visible"
+        aria-label="Icon grid"
+      >
+        <div id="icon-grid" class="icon-grid"></div>
+      </section>
+
+      <section
+        id="view-list"
+        class="view view--list"
+        aria-label="Illustration list"
+        hidden
+      >
+        <ul id="list-view" class="list-view"></ul>
+      </section>
+
+      <section
+        id="view-search"
+        class="view view--search"
+        aria-label="Search illustrations"
+        hidden
+      >
+        <label class="search-field">
+          <span class="visually-hidden">Search illustrations</span>
+          <input
+            id="search-input"
+            type="search"
+            placeholder="Search Illustrations"
+            autocomplete="off"
+          />
+        </label>
+        <div id="search-results" class="icon-grid icon-grid--search"></div>
+      </section>
+    </main>
+
+    <aside
+      id="detail-panel"
+      class="detail-panel"
+      aria-hidden="true"
+      aria-labelledby="detail-title"
+    >
+      <div class="detail-panel__header">
+        <div class="detail-panel__heading">
+          <h2 id="detail-title" class="detail-panel__title"></h2>
+        </div>
+        <button
+          type="button"
+          class="detail-panel__close"
+          id="detail-close"
+          aria-label="Close details"
+        >
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+
+      <div class="detail-panel__body">
+        <div id="detail-preview" class="detail-panel__preview" aria-hidden="true">
+          <span class="placeholder placeholder--large"></span>
+        </div>
+        <p id="detail-credit" class="detail-panel__credit"></p>
+        <p id="detail-description" class="detail-panel__description"></p>
+        <div id="detail-tags" class="detail-panel__tags" aria-label="Tags"></div>
+      </div>
+
+      <div class="detail-panel__actions">
+        <button type="button" class="detail-action" id="detail-upload">
+          <span>Upload</span>
+          <span class="detail-action__plus" aria-hidden="true">+</span>
+        </button>
+        <div class="detail-action detail-action--download">
+          <span>Download</span>
+          <span class="detail-action__formats">
+            <button type="button" id="detail-download-svg" class="detail-action__link">
+              svg
+            </button>
+            <button type="button" id="detail-download-png" class="detail-action__link">
+              png
+            </button>
+          </span>
+        </div>
+      </div>
+    </aside>
+
+    <input
+      id="detail-file-input"
+      class="visually-hidden"
+      type="file"
+      accept="image/*,.svg,image/svg+xml"
+      tabindex="-1"
+    />
+
+    <button
+      type="button"
+      class="fab"
+      id="add-btn"
+      aria-label="Add illustration"
+      title="Add illustration"
+    >
+      <span class="fab__plus" aria-hidden="true">+</span>
+    </button>
+
+    <dialog id="add-dialog" class="add-dialog">
+      <form method="dialog" id="add-form" class="add-dialog__form">
+        <h2>Add illustration</h2>
+        <label>
+          Name
+          <input
+            id="add-name"
+            name="name"
+            type="text"
+            required
+            placeholder="e.g. Apple"
+          />
+        </label>
+        <label>
+          Upload artwork
+          <input
+            id="add-file"
+            name="file"
+            type="file"
+            accept="image/*,.svg,image/svg+xml"
+          />
+        </label>
+        <p class="add-dialog__hint">
+          Uploads stay on this device. You can download them later as SVG or PNG.
+        </p>
+        <div class="add-dialog__actions">
+          <button type="button" id="add-cancel" class="btn btn--ghost">
+            Cancel
+          </button>
+          <button type="submit" value="confirm" class="btn btn--solid">
+            Add
+          </button>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
