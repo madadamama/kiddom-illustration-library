@@ -29,12 +29,6 @@
 
   const iconGrid = document.getElementById("icon-grid");
   const searchInput = document.getElementById("search-input");
-  const searchResults = document.getElementById("search-results");
-  const viewButtons = document.querySelectorAll(".view-nav__btn");
-  const views = {
-    icon: document.getElementById("view-icon"),
-    search: document.getElementById("view-search"),
-  };
   const addBtn = document.getElementById("add-btn");
   const addDialog = document.getElementById("add-dialog");
   const addForm = document.getElementById("add-form");
@@ -45,7 +39,6 @@
 
   const detailPanel = document.getElementById("detail-panel");
   const detailTitle = document.getElementById("detail-title");
-  const detailTags = document.getElementById("detail-tags");
   const detailCredit = document.getElementById("detail-credit");
   const detailDescription = document.getElementById("detail-description");
   const detailPreview = document.getElementById("detail-preview");
@@ -234,24 +227,6 @@
     target.appendChild(fragment);
   }
 
-  function setView(viewName) {
-    Object.entries(views).forEach(([name, section]) => {
-      const active = name === viewName;
-      section.classList.toggle("is-visible", active);
-      section.hidden = !active;
-    });
-
-    viewButtons.forEach((btn) => {
-      const active = btn.dataset.view === viewName;
-      btn.classList.toggle("is-active", active);
-      btn.setAttribute("aria-pressed", String(active));
-    });
-
-    if (viewName === "search") {
-      searchInput.focus();
-    }
-  }
-
   function matchesQuery(item, query) {
     if (!query) {
       return true;
@@ -265,11 +240,10 @@
 
   function refresh() {
     const query = searchInput.value.trim().toLowerCase();
-    const searchVisible = query
+    const visible = query
       ? illustrations.filter((item) => matchesQuery(item, query))
       : illustrations;
-    renderIconGrid(iconGrid, illustrations);
-    renderIconGrid(searchResults, searchVisible);
+    renderIconGrid(iconGrid, visible);
   }
 
   function setSelectedStyles() {
@@ -287,13 +261,6 @@
     selectedId = id;
     detailTitle.textContent = item.name;
 
-    detailTags.replaceChildren();
-    (item.tags || []).forEach((tag) => {
-      const chip = document.createElement("span");
-      chip.className = "detail-panel__tag";
-      chip.textContent = tag;
-      detailTags.appendChild(chip);
-    });
     detailCredit.textContent = item.illustrator
       ? `Illustrated by ${item.illustrator}`
       : "Not yet assigned";
@@ -325,10 +292,6 @@
     document.body.classList.remove("detail-open");
     setSelectedStyles();
   }
-
-  viewButtons.forEach((btn) => {
-    btn.addEventListener("click", () => setView(btn.dataset.view));
-  });
 
   searchInput.addEventListener("input", () => {
     refresh();
@@ -465,10 +428,8 @@
 
     closeAddDialog();
     refresh();
-    setView("icon");
     openDetail(id);
   });
 
   refresh();
-  setView("icon");
 })();

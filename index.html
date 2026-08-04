@@ -4,29 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kiddom Illustration Library</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css?v=header18" />
   </head>
   <body>
     <header class="site-header">
-      <h1 class="site-title">Kiddom Illustration Library</h1>
-      <nav class="view-nav" aria-label="Library views">
-        <button
-          type="button"
-          class="view-nav__btn is-active"
-          data-view="icon"
-          aria-pressed="true"
-        >
-          Icon
-        </button>
-        <button
-          type="button"
-          class="view-nav__btn"
-          data-view="search"
-          aria-pressed="false"
-        >
-          Search
-        </button>
-      </nav>
+      <h1 class="site-title">Kiddom</h1>
+      <label class="header-search">
+        <span class="visually-hidden">Search illustrations</span>
+        <input
+          id="search-input"
+          type="search"
+          placeholder="Search"
+          autocomplete="off"
+        />
+      </label>
     </header>
 
     <main class="site-main">
@@ -36,24 +27,6 @@
         aria-label="Icon grid"
       >
         <div id="icon-grid" class="icon-grid"></div>
-      </section>
-
-      <section
-        id="view-search"
-        class="view view--search"
-        aria-label="Search illustrations"
-        hidden
-      >
-        <label class="search-field">
-          <span class="visually-hidden">Search illustrations</span>
-          <input
-            id="search-input"
-            type="search"
-            placeholder="Search Illustrations"
-            autocomplete="off"
-          />
-        </label>
-        <div id="search-results" class="icon-grid icon-grid--search"></div>
       </section>
     </main>
 
@@ -83,7 +56,6 @@
         </div>
         <p id="detail-credit" class="detail-panel__credit"></p>
         <p id="detail-description" class="detail-panel__description"></p>
-        <div id="detail-tags" class="detail-panel__tags" aria-label="Tags"></div>
       </div>
 
       <div class="detail-panel__actions">
@@ -156,7 +128,7 @@
       </form>
     </dialog>
 
-    <script src="js/data.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/data.js?v=header13"></script>
+    <script src="js/app.js?v=header13"></script>
   </body>
 </html>
