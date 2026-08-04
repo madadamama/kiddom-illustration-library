@@ -16,7 +16,7 @@
         status: item.status || "needed",
         originalPreviewUrl: item.originalPreviewUrl || item.previewUrl || null,
         hasUserUpload: Boolean(item.hasUserUpload || item.status === "done"),
-      }))
+      })).filter((item) => item.illustrator === "Kemal Sanli")
     : [];
 
   function sortIllustrations() {
@@ -362,6 +362,7 @@
       Object.assign(item, artwork);
       item.hasUserUpload = true;
       item.status = "done";
+      item.illustrator = "Kemal Sanli";
       refresh();
       openDetail(item.id);
     } catch (error) {
@@ -453,7 +454,7 @@
       id,
       name,
       tags: [],
-      illustrator: null,
+      illustrator: artwork.hasUpload ? "Kemal Sanli" : null,
       description: DEFAULT_DESCRIPTION,
       status: artwork.hasUpload ? "done" : "needed",
       hasUserUpload: Boolean(artwork.hasUpload),
