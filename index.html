@@ -21,14 +21,6 @@
         <button
           type="button"
           class="view-nav__btn"
-          data-view="list"
-          aria-pressed="false"
-        >
-          List
-        </button>
-        <button
-          type="button"
-          class="view-nav__btn"
           data-view="search"
           aria-pressed="false"
         >
@@ -44,15 +36,6 @@
         aria-label="Icon grid"
       >
         <div id="icon-grid" class="icon-grid"></div>
-      </section>
-
-      <section
-        id="view-list"
-        class="view view--list"
-        aria-label="Illustration list"
-        hidden
-      >
-        <ul id="list-view" class="list-view"></ul>
       </section>
 
       <section
@@ -111,9 +94,6 @@
         <div class="detail-action detail-action--download">
           <span>Download</span>
           <span class="detail-action__formats">
-            <button type="button" id="detail-download-svg" class="detail-action__link">
-              svg
-            </button>
             <button type="button" id="detail-download-png" class="detail-action__link">
               png
             </button>
@@ -163,7 +143,7 @@
           />
         </label>
         <p class="add-dialog__hint">
-          Uploads stay on this device. You can download them later as SVG or PNG.
+          Uploads stay on this device. You can download them later as PNG.
         </p>
         <div class="add-dialog__actions">
           <button type="button" id="add-cancel" class="btn btn--ghost">

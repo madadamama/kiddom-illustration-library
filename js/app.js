@@ -28,13 +28,11 @@
   sortIllustrations();
 
   const iconGrid = document.getElementById("icon-grid");
-  const listView = document.getElementById("list-view");
   const searchInput = document.getElementById("search-input");
   const searchResults = document.getElementById("search-results");
   const viewButtons = document.querySelectorAll(".view-nav__btn");
   const views = {
     icon: document.getElementById("view-icon"),
-    list: document.getElementById("view-list"),
     search: document.getElementById("view-search"),
   };
   const addBtn = document.getElementById("add-btn");
@@ -53,7 +51,6 @@
   const detailPreview = document.getElementById("detail-preview");
   const detailClose = document.getElementById("detail-close");
   const detailUpload = document.getElementById("detail-upload");
-  const detailDownloadSvg = document.getElementById("detail-download-svg");
   const detailDownloadPng = document.getElementById("detail-download-png");
 
   let selectedId = null;
@@ -177,38 +174,10 @@
     triggerDownload(`${slugify(item.name) || item.id}.png`, blob);
   }
 
-  async function exportAsSvg(item) {
-    if (item.rawSvg) {
-      const blob = new Blob([item.rawSvg], { type: "image/svg+xml" });
-      triggerDownload(`${slugify(item.name) || item.id}.svg`, blob);
-      return;
-    }
-
-    const src = item.imageDataUrl || item.previewUrl;
-    if (!src) {
-      throw new Error("No artwork to download");
-    }
-
-    const img = await loadImage(src);
-    const width = img.naturalWidth || 512;
-    const height = img.naturalHeight || 512;
-    const svg = `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
-  <image href="${src}" width="${width}" height="${height}" />
-</svg>
-`;
-    const blob = new Blob([svg], { type: "image/svg+xml" });
-    triggerDownload(`${slugify(item.name) || item.id}.svg`, blob);
-  }
-
   function updateDownloadAvailability(item) {
     const ready = hasArtwork(item);
-    [detailDownloadSvg, detailDownloadPng].forEach((btn) => {
-      btn.disabled = !ready;
-      btn.title = ready
-        ? `Download as ${btn.id.includes("svg") ? "SVG" : "PNG"}`
-        : "Upload artwork first";
-    });
+    detailDownloadPng.disabled = !ready;
+    detailDownloadPng.title = ready ? "Download as PNG" : "Upload artwork first";
   }
 
   function placeholderEl(extraClass) {
@@ -251,39 +220,6 @@
     return button;
   }
 
-  function createListItem(item) {
-    const li = document.createElement("li");
-    li.className = "list-view__item";
-    li.dataset.id = item.id;
-    li.tabIndex = 0;
-    li.setAttribute("role", "button");
-    li.setAttribute("aria-label", `Open ${item.name}`);
-    if (selectedId === item.id) {
-      li.classList.add("is-selected");
-    }
-
-    const name = document.createElement("span");
-    name.className = "list-view__name";
-    name.textContent = item.name;
-    li.appendChild(name);
-
-    const tags = document.createElement("span");
-    tags.className = "list-view__tags";
-    const tagList = item.tags && item.tags.length ? item.tags : ["tag", "object"];
-    tags.textContent = tagList.join(", ");
-    li.appendChild(tags);
-
-    li.addEventListener("click", () => openDetail(item.id));
-    li.addEventListener("keydown", (event) => {
-      if (event.key === "Enter" || event.key === " ") {
-        event.preventDefault();
-        openDetail(item.id);
-      }
-    });
-
-    return li;
-  }
-
   function renderIconGrid(target, items) {
     target.replaceChildren();
     if (!items.length) {
@@ -296,20 +232,6 @@
     const fragment = document.createDocumentFragment();
     items.forEach((item) => fragment.appendChild(createIconCard(item)));
     target.appendChild(fragment);
-  }
-
-  function renderList(items) {
-    listView.replaceChildren();
-    if (!items.length) {
-      const empty = document.createElement("li");
-      empty.className = "empty-state";
-      empty.textContent = "No illustrations yet.";
-      listView.appendChild(empty);
-      return;
-    }
-    const fragment = document.createDocumentFragment();
-    items.forEach((item) => fragment.appendChild(createListItem(item)));
-    listView.appendChild(fragment);
   }
 
   function setView(viewName) {
@@ -347,12 +269,11 @@
       ? illustrations.filter((item) => matchesQuery(item, query))
       : illustrations;
     renderIconGrid(iconGrid, illustrations);
-    renderList(illustrations);
     renderIconGrid(searchResults, searchVisible);
   }
 
   function setSelectedStyles() {
-    document.querySelectorAll(".icon-card, .list-view__item").forEach((el) => {
+    document.querySelectorAll(".icon-card").forEach((el) => {
       el.classList.toggle("is-selected", el.dataset.id === selectedId);
     });
   }
@@ -446,20 +367,6 @@
     } catch (error) {
       console.error(error);
       window.alert("Could not read that file. Try another image or SVG.");
-    }
-  });
-
-  detailDownloadSvg.addEventListener("click", async () => {
-    const item = findById(selectedId);
-    if (!hasArtwork(item)) {
-      window.alert("Upload artwork first to download.");
-      return;
-    }
-    try {
-      await exportAsSvg(item);
-    } catch (error) {
-      console.error(error);
-      window.alert("Could not export SVG. Try uploading the file again.");
     }
   });
 
