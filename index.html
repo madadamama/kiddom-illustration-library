@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kiddom Illustration Library</title>
-    <link rel="stylesheet" href="css/styles.css?v=header18" />
+    <title>Kiddom</title>
+    <link rel="stylesheet" href="css/styles.css?v=detail2" />
   </head>
   <body>
     <header class="site-header">
@@ -56,20 +56,22 @@
         </div>
         <p id="detail-credit" class="detail-panel__credit"></p>
         <p id="detail-description" class="detail-panel__description"></p>
-      </div>
-
-      <div class="detail-panel__actions">
-        <button type="button" class="detail-action" id="detail-upload">
-          <span>Upload</span>
-          <span class="detail-action__plus" aria-hidden="true">+</span>
-        </button>
-        <div class="detail-action detail-action--download">
-          <span>Download</span>
-          <span class="detail-action__formats">
-            <button type="button" id="detail-download-png" class="detail-action__link">
-              png
+        <div class="detail-panel__actions">
+          <div class="detail-panel__action-row">
+            <button type="button" class="detail-panel__text-link" id="detail-upload">
+              Upload
             </button>
-          </span>
+            <span class="detail-panel__action-sep" aria-hidden="true">/</span>
+            <span class="detail-panel__download-label">Download</span>
+          </div>
+          <div class="detail-panel__download-options">
+            <button type="button" id="detail-download-png" class="detail-panel__text-link">
+              RGB (.png)
+            </button>
+            <button type="button" id="detail-download-ai" class="detail-panel__text-link">
+              CMYK (.ai)
+            </button>
+          </div>
         </div>
       </div>
     </aside>
@@ -78,7 +80,7 @@
       id="detail-file-input"
       class="visually-hidden"
       type="file"
-      accept="image/*,.svg,image/svg+xml"
+      accept="image/*,.svg,image/svg+xml,.ai,application/postscript"
       tabindex="-1"
     />
 
@@ -128,7 +130,7 @@
       </form>
     </dialog>
 
-    <script src="js/data.js?v=header13"></script>
-    <script src="js/app.js?v=header13"></script>
+    <script src="js/data.js?v=detail2"></script>
+    <script src="js/app.js?v=detail2"></script>
   </body>
 </html>

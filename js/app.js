@@ -45,6 +45,7 @@
   const detailClose = document.getElementById("detail-close");
   const detailUpload = document.getElementById("detail-upload");
   const detailDownloadPng = document.getElementById("detail-download-png");
+  const detailDownloadAi = document.getElementById("detail-download-ai");
 
   let selectedId = null;
 
@@ -89,7 +90,25 @@
     );
   }
 
+  function isAiFile(file) {
+    return (
+      /\.ai$/i.test(file.name || "") ||
+      file.type === "application/postscript" ||
+      file.type === "application/illustrator"
+    );
+  }
+
   async function ingestFile(file) {
+    if (isAiFile(file)) {
+      const aiDataUrl = await readFileAsDataURL(file);
+      return {
+        aiDataUrl,
+        aiFileName: file.name || "artwork.ai",
+        hasAiUpload: true,
+        hasUpload: false,
+      };
+    }
+
     const imageDataUrl = await readFileAsDataURL(file);
     const sourceMime = file.type || (isSvgFile(file) ? "image/svg+xml" : "image/*");
     let rawSvg = null;
@@ -103,6 +122,10 @@
       rawSvg,
       hasUpload: true,
     };
+  }
+
+  function hasAiArtwork(item) {
+    return Boolean(item && (item.aiDataUrl || item.aiUrl));
   }
 
   function loadImage(src) {
@@ -167,10 +190,31 @@
     triggerDownload(`${slugify(item.name) || item.id}.png`, blob);
   }
 
+  async function exportAsAi(item) {
+    const src = item.aiDataUrl || item.aiUrl;
+    if (!src) {
+      throw new Error("No AI file to download");
+    }
+
+    const response = await fetch(src);
+    const blob = await response.blob();
+    const filename =
+      item.aiFileName ||
+      `${slugify(item.name) || item.id}.ai`;
+    triggerDownload(filename, blob);
+  }
+
   function updateDownloadAvailability(item) {
-    const ready = hasArtwork(item);
-    detailDownloadPng.disabled = !ready;
-    detailDownloadPng.title = ready ? "Download as PNG" : "Upload artwork first";
+    const pngReady = hasArtwork(item);
+    const aiReady = hasAiArtwork(item);
+    detailDownloadPng.disabled = !pngReady;
+    detailDownloadPng.title = pngReady
+      ? "Download RGB PNG"
+      : "Upload PNG artwork first";
+    detailDownloadAi.disabled = !aiReady;
+    detailDownloadAi.title = aiReady
+      ? "Download CMYK AI"
+      : "Upload a .ai file first";
   }
 
   function placeholderEl(extraClass) {
@@ -235,6 +279,9 @@
     if (item.name.toLowerCase().includes(q)) {
       return true;
     }
+    if (item.subtitle && String(item.subtitle).toLowerCase().includes(q)) {
+      return true;
+    }
     return (item.tags || []).some((tag) => String(tag).toLowerCase().includes(q));
   }
 
@@ -259,7 +306,9 @@
     }
 
     selectedId = id;
-    detailTitle.textContent = item.name;
+    detailTitle.textContent = item.subtitle
+      ? `${item.name} ${item.subtitle}`
+      : item.name;
 
     detailCredit.textContent = item.illustrator
       ? `Illustrated by ${item.illustrator}`
@@ -322,22 +371,28 @@
 
     try {
       const artwork = await ingestFile(file);
-      Object.assign(item, artwork);
-      item.hasUserUpload = true;
-      item.status = "done";
-      item.illustrator = "Kemal Sanli";
+      if (artwork.hasAiUpload) {
+        item.aiDataUrl = artwork.aiDataUrl;
+        item.aiFileName = artwork.aiFileName;
+        item.aiUrl = null;
+      } else {
+        Object.assign(item, artwork);
+        item.hasUserUpload = true;
+        item.status = "done";
+        item.illustrator = item.illustrator || "Kemal Sanli";
+      }
       refresh();
       openDetail(item.id);
     } catch (error) {
       console.error(error);
-      window.alert("Could not read that file. Try another image or SVG.");
+      window.alert("Could not read that file. Try another image or .ai file.");
     }
   });
 
   detailDownloadPng.addEventListener("click", async () => {
     const item = findById(selectedId);
     if (!hasArtwork(item)) {
-      window.alert("Upload artwork first to download.");
+      window.alert("Upload PNG artwork first to download RGB.");
       return;
     }
     try {
@@ -345,6 +400,20 @@
     } catch (error) {
       console.error(error);
       window.alert("Could not export PNG. Try uploading the file again.");
+    }
+  });
+
+  detailDownloadAi.addEventListener("click", async () => {
+    const item = findById(selectedId);
+    if (!hasAiArtwork(item)) {
+      window.alert("Upload a CMYK .ai file first to download it.");
+      return;
+    }
+    try {
+      await exportAsAi(item);
+    } catch (error) {
+      console.error(error);
+      window.alert("Could not download the .ai file. Try uploading it again.");
     }
   });
 

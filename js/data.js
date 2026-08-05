@@ -452,7 +452,8 @@ window.ILLUSTRATIONS = [
   },
   {
     id: "brain-with-gears-think",
-    name: "Brain with gears (\"Think\")",
+    name: "Brain with gears",
+    subtitle: "(\"Think\")",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/brain-with-gears.png",
@@ -2477,7 +2478,8 @@ window.ILLUSTRATIONS = [
   },
   {
     id: "person-balancing-shapes-compare",
-    name: "Person, Balancing Shapes (\"Compare\")",
+    name: "Person balancing shapes",
+    subtitle: "(\"Compare\")",
     tags: ["people"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/person-balancing-shapes-compare.png",
@@ -2756,7 +2758,8 @@ window.ILLUSTRATIONS = [
   },
   {
     id: "puzzle-piece-with-question-mark-challenge",
-    name: "Puzzle piece with question mark (\"Challenge\")",
+    name: "Puzzle piece with question mark",
+    subtitle: "(\"Challenge\")",
     tags: ["food"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/puzzle-piece-with-question-mark-challenge.png",
