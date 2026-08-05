@@ -282,6 +282,9 @@
     if (item.subtitle && String(item.subtitle).toLowerCase().includes(q)) {
       return true;
     }
+    if (item.description && String(item.description).toLowerCase().includes(q)) {
+      return true;
+    }
     return (item.tags || []).some((tag) => String(tag).toLowerCase().includes(q));
   }
 
@@ -310,9 +313,19 @@
       ? `${item.name} ${item.subtitle}`
       : item.name;
 
-    detailCredit.textContent = item.illustrator
-      ? `Illustrated by ${item.illustrator}`
-      : "Not yet assigned";
+    detailCredit.replaceChildren();
+    if (item.illustrator) {
+      detailCredit.append("Illustrated by ");
+      const link = document.createElement("a");
+      link.href = "https://www.kemal-sanli.com/";
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.className = "detail-panel__credit-link";
+      link.textContent = item.illustrator;
+      detailCredit.append(link);
+    } else {
+      detailCredit.textContent = "Not yet assigned";
+    }
     detailDescription.textContent = item.description || DEFAULT_DESCRIPTION;
 
     detailPreview.replaceChildren();
