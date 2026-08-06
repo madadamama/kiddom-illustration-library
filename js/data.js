@@ -3,7 +3,7 @@ window.ILLUSTRATIONS = [
   {
     id: "add-on",
     name: "Add on",
-    description: "speech, bubble, chat, plus, message",
+    description: "add-on, speech, bubble, plus, message",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/add-on.png",
@@ -112,7 +112,7 @@ window.ILLUSTRATIONS = [
   {
     id: "ball",
     name: "Ball",
-    description: "sphere, round, play, sport, bounce",
+    description: "ball, sphere, sport, play, bounce",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/ball.png",
@@ -131,7 +131,7 @@ window.ILLUSTRATIONS = [
   {
     id: "bang",
     name: "Bang",
-    description: "explosion, burst, spark, fireworks, flash",
+    description: "bang, explosion, burst, fireworks, flash",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/bang.png",
@@ -168,7 +168,7 @@ window.ILLUSTRATIONS = [
   {
     id: "bathtub",
     name: "Bathtub",
-    description: "bath, wash, bubbles, water, soap",
+    description: "bathtub, bath, wash, bubbles, water",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/bathtub.png",
@@ -178,7 +178,7 @@ window.ILLUSTRATIONS = [
   {
     id: "beaker",
     name: "Beaker",
-    description: "science, lab, chemistry, glass, experiment",
+    description: "beaker, science, lab, chemistry, experiment",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/beaker.png",
@@ -188,7 +188,7 @@ window.ILLUSTRATIONS = [
   {
     id: "bear",
     name: "Bear",
-    description: "animal, brown, scary, mammal, furry",
+    description: "bear, animal, mammal, furry, wildlife",
     tags: ["animal"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/bear.png",
@@ -216,7 +216,7 @@ window.ILLUSTRATIONS = [
   {
     id: "bed",
     name: "Bed",
-    description: "sleep, rest, furniture, bedroom, night",
+    description: "bed, sleep, furniture, bedroom, rest",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/bed.png",
@@ -226,7 +226,7 @@ window.ILLUSTRATIONS = [
   {
     id: "bee",
     name: "Bee",
-    description: "insect, yellow, honey, buzz, wings",
+    description: "bee, insect, honey, buzz, wings",
     tags: ["animal"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/bee.png",
@@ -254,7 +254,7 @@ window.ILLUSTRATIONS = [
   {
     id: "bell",
     name: "Bell",
-    description: "ring, sound, metal, chime, alert",
+    description: "bell, ring, chime, alert, sound",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/bell.png",
@@ -264,7 +264,7 @@ window.ILLUSTRATIONS = [
   {
     id: "bib",
     name: "Bib",
-    description: "baby, feeding, cloth, infant, meal",
+    description: "bib, baby, feeding, cloth, infant",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/bib.png",
@@ -274,8 +274,8 @@ window.ILLUSTRATIONS = [
   {
     id: "bicycle",
     name: "Bicycle",
-    description: "bike, wheels, ride, transport, pedals",
-    tags: ["object"],
+    description: "bicycle, bike, wheels, pedals, ride",
+    tags: ["vehicle"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/bicycle.png",
     sourceMime: "image/png",
@@ -293,7 +293,7 @@ window.ILLUSTRATIONS = [
   {
     id: "bill",
     name: "Bill",
-    description: "money, invoice, payment, dollar, receipt",
+    description: "bill, invoice, payment, money, receipt",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/bill.png",
@@ -303,7 +303,7 @@ window.ILLUSTRATIONS = [
   {
     id: "bird",
     name: "Bird",
-    description: "animal, wings, fly, feather, avian",
+    description: "bird, wings, feather, avian, fly",
     tags: ["animal"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/bird.png",
@@ -313,8 +313,8 @@ window.ILLUSTRATIONS = [
   {
     id: "bird-cage",
     name: "Bird cage",
-    description: "cage, pet, metal, enclosure, bird",
-    tags: ["animal"],
+    description: "birdcage, cage, enclosure, pet, metal",
+    tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/bird-cage.png",
     sourceMime: "image/png",
@@ -341,7 +341,7 @@ window.ILLUSTRATIONS = [
   {
     id: "blocks",
     name: "Blocks",
-    description: "toys, stack, play, build, cubes",
+    description: "blocks, toys, stack, build, cubes",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/blocks.png",
@@ -351,8 +351,8 @@ window.ILLUSTRATIONS = [
   {
     id: "boat",
     name: "Boat",
-    description: "water, sail, travel, ocean, float",
-    tags: ["object"],
+    description: "boat, ferry, ship, water, sail",
+    tags: ["vehicle"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/boat.png",
     sourceMime: "image/png",
@@ -370,7 +370,7 @@ window.ILLUSTRATIONS = [
   {
     id: "bolt",
     name: "Bolt",
-    description: "metal, fastener, tool, hardware, screw",
+    description: "bolt, fastener, metal, hardware, screw",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/bolt.png",
@@ -380,7 +380,7 @@ window.ILLUSTRATIONS = [
   {
     id: "bone",
     name: "Bone",
-    description: "skeleton, white, dog, anatomy, fossil",
+    description: "bone, dog, skeleton, chew, anatomy",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/bone.png",
@@ -390,7 +390,7 @@ window.ILLUSTRATIONS = [
   {
     id: "book",
     name: "Book",
-    description: "read, pages, learning, story, text",
+    description: "book, read, pages, story, learning",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/book.png",
@@ -445,7 +445,7 @@ window.ILLUSTRATIONS = [
   {
     id: "boss",
     name: "Boss",
-    description: "leader, person, authority, work, manager",
+    description: "boss, manager, leader, hierarchy, teamwork",
     tags: ["people"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/boss.png",
@@ -455,7 +455,7 @@ window.ILLUSTRATIONS = [
   {
     id: "bow",
     name: "Bow",
-    description: "ribbon, gift, tie, decoration, knot",
+    description: "bow, ribbon, gift, knot, decoration",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/bow.png",
@@ -465,7 +465,7 @@ window.ILLUSTRATIONS = [
   {
     id: "box",
     name: "Box",
-    description: "container, package, storage, cardboard, cube",
+    description: "box, container, package, storage, cardboard",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/box.png",
@@ -474,9 +474,8 @@ window.ILLUSTRATIONS = [
   },
   {
     id: "brain-with-gears-think",
-    name: "Brain with gears",
-    description: "think, brain, gears, mind, ideas",
-    subtitle: "(\"Think\")",
+    name: "Brain with gears (\"Think\")",
+    description: "brain, gears, think, mind, ideas",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/brain-with-gears.png",
@@ -540,7 +539,7 @@ window.ILLUSTRATIONS = [
   {
     id: "bunk",
     name: "Bunk",
-    description: "bed, sleep, stacked, furniture, share",
+    description: "bunk, bed, stacked, sleep, furniture",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/bunk.png",
@@ -550,8 +549,8 @@ window.ILLUSTRATIONS = [
   {
     id: "bus",
     name: "Bus",
-    description: "vehicle, transport, yellow, school, ride",
-    tags: ["object"],
+    description: "bus, vehicle, transport, ride, passengers",
+    tags: ["vehicle"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/bus.png",
     sourceMime: "image/png",
@@ -578,8 +577,8 @@ window.ILLUSTRATIONS = [
   {
     id: "cab",
     name: "Cab",
-    description: "taxi, car, transport, city, ride",
-    tags: ["object"],
+    description: "cab, taxi, yellow, transport, ride",
+    tags: ["vehicle"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/cab.png",
     sourceMime: "image/png",
@@ -606,7 +605,7 @@ window.ILLUSTRATIONS = [
   {
     id: "cake",
     name: "Cake",
-    description: "dessert, sweet, birthday, frosting, food",
+    description: "cake, dessert, birthday, frosting, sweet",
     tags: ["food"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/cake.png",
@@ -625,8 +624,8 @@ window.ILLUSTRATIONS = [
   {
     id: "car",
     name: "Car",
-    description: "vehicle, drive, wheels, transport, road",
-    tags: ["object"],
+    description: "car, automobile, drive, wheels, vehicle",
+    tags: ["vehicle"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/car.png",
     sourceMime: "image/png",
@@ -644,7 +643,7 @@ window.ILLUSTRATIONS = [
   {
     id: "cash",
     name: "Cash",
-    description: "money, bills, currency, wealth, pay",
+    description: "cash, money, bills, currency, pay",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/cash.png",
@@ -663,7 +662,7 @@ window.ILLUSTRATIONS = [
   {
     id: "cat",
     name: "Cat",
-    description: "animal, pet, feline, whiskers, mammal",
+    description: "cat, feline, pet, whiskers, mammal",
     tags: ["animal"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/cat.png",
@@ -691,7 +690,7 @@ window.ILLUSTRATIONS = [
   {
     id: "cat-sleeping",
     name: "Cat sleeping",
-    description: "cat, sleep, rest, pet, cozy",
+    description: "cat, sleeping, rest, pet, cozy",
     tags: ["animal"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/cat-sleeping.png",
@@ -737,7 +736,7 @@ window.ILLUSTRATIONS = [
   {
     id: "chain",
     name: "Chain",
-    description: "links, metal, connected, lock, strong",
+    description: "chain, links, metal, connected, lock",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/chain.png",
@@ -747,7 +746,7 @@ window.ILLUSTRATIONS = [
   {
     id: "chair",
     name: "Chair",
-    description: "seat, furniture, sit, wood, rest",
+    description: "chair, seat, furniture, sit, rest",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/chair.png",
@@ -757,8 +756,8 @@ window.ILLUSTRATIONS = [
   {
     id: "chat",
     name: "Chat",
-    description: "talk, conversation, message, speech, connect",
-    tags: ["object"],
+    description: "chat, talk, conversation, speech, people",
+    tags: ["people"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/chat.png",
     sourceMime: "image/png",
@@ -767,7 +766,7 @@ window.ILLUSTRATIONS = [
   {
     id: "chick",
     name: "Chick",
-    description: "bird, baby, yellow, hatch, cute",
+    description: "chick, bird, baby, hatch, yellow",
     tags: ["animal"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/chick.png",
@@ -777,8 +776,8 @@ window.ILLUSTRATIONS = [
   {
     id: "chicken-pen",
     name: "Chicken Pen",
-    description: "farm, chicken, fence, coop, animal",
-    tags: ["animal"],
+    description: "chicken pen, coop, fence, farm, enclosure",
+    tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/chicken-pen.png",
     sourceMime: "image/png",
@@ -787,7 +786,7 @@ window.ILLUSTRATIONS = [
   {
     id: "child",
     name: "Child",
-    description: "kid, youth, person, young, student",
+    description: "child, kid, youth, student, young",
     tags: ["people"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/child.png",
@@ -914,7 +913,7 @@ window.ILLUSTRATIONS = [
   {
     id: "coat",
     name: "Coat",
-    description: "clothing, warm, outerwear, winter, jacket",
+    description: "coat, jacket, clothing, warm, outerwear",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/coat.png",
@@ -924,8 +923,8 @@ window.ILLUSTRATIONS = [
   {
     id: "cod",
     name: "Cod",
-    description: "fish, ocean, food, swim, aquatic",
-    tags: ["object"],
+    description: "fish, cod, ocean, swim, aquatic",
+    tags: ["animal", "fish"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/cod.png",
     sourceMime: "image/png",
@@ -970,8 +969,8 @@ window.ILLUSTRATIONS = [
   {
     id: "cot",
     name: "Cot",
-    description: "bed, sleep, portable, rest, camp",
-    tags: ["object"],
+    description: "cot, furniture, bed, sleep, portable",
+    tags: ["object", "furniture"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/cot.png",
     sourceMime: "image/png",
@@ -980,7 +979,7 @@ window.ILLUSTRATIONS = [
   {
     id: "cow",
     name: "Cow",
-    description: "animal, farm, mammal, milk, spotted",
+    description: "cow, cattle, farm, milk, mammal",
     tags: ["animal"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/cow.png",
@@ -1026,7 +1025,7 @@ window.ILLUSTRATIONS = [
   {
     id: "cut",
     name: "Cut",
-    description: "scissors, snip, slice, tool, craft",
+    description: "cut, scissors, snip, paper, craft",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/cut.png",
@@ -1036,7 +1035,7 @@ window.ILLUSTRATIONS = [
   {
     id: "cute",
     name: "Cute",
-    description: "adorable, sweet, charming, soft, lovable",
+    description: "cute, adorable, soft, charming, lovable",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/cute.png",
@@ -1073,8 +1072,8 @@ window.ILLUSTRATIONS = [
   {
     id: "dig",
     name: "Dig",
-    description: "shovel, dirt, hole, garden, excavate",
-    tags: ["object"],
+    description: "dig, shovel, dirt, garden, digging",
+    tags: ["people"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/dig.png",
     sourceMime: "image/png",
@@ -1101,7 +1100,7 @@ window.ILLUSTRATIONS = [
   {
     id: "dog",
     name: "Dog",
-    description: "animal, pet, puppy, loyal, mammal",
+    description: "dog, pet, puppy, loyal, mammal",
     tags: ["animal"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/dog.png",
@@ -1138,7 +1137,7 @@ window.ILLUSTRATIONS = [
   {
     id: "donut",
     name: "Donut",
-    description: "sweet, pastry, frosting, food, circular",
+    description: "donut, doughnut, pastry, frosting, sweet",
     tags: ["food"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/donut.png",
@@ -1148,7 +1147,7 @@ window.ILLUSTRATIONS = [
   {
     id: "drill",
     name: "Drill",
-    description: "tool, hole, power, build, hardware",
+    description: "drill, tool, hole, power, hardware",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/drill.png",
@@ -1158,7 +1157,7 @@ window.ILLUSTRATIONS = [
   {
     id: "drum",
     name: "Drum",
-    description: "music, percussion, beat, rhythm, instrument",
+    description: "drum, music, percussion, beat, rhythm",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/drum.png",
@@ -1240,7 +1239,7 @@ window.ILLUSTRATIONS = [
   {
     id: "empathy",
     name: "Empathy",
-    description: "care, feelings, kindness, connect, heart",
+    description: "empathy, care, kindness, feelings, compassion",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/empathy.png",
@@ -1331,7 +1330,7 @@ window.ILLUSTRATIONS = [
   {
     id: "field",
     name: "Field",
-    description: "grass, outdoor, nature, open, landscape",
+    description: "field, grass, landscape, nature, outdoor",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/field.png",
@@ -1341,7 +1340,7 @@ window.ILLUSTRATIONS = [
   {
     id: "figs",
     name: "Figs",
-    description: "fruit, food, sweet, tree, purple",
+    description: "figs, fruit, sweet, purple, fresh",
     tags: ["food"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/figs.png",
@@ -1360,7 +1359,7 @@ window.ILLUSTRATIONS = [
   {
     id: "fin",
     name: "Fin",
-    description: "fish, swim, ocean, aquatic, water",
+    description: "fin, shark, ocean, water, swim",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/fin.png",
@@ -1388,7 +1387,7 @@ window.ILLUSTRATIONS = [
   {
     id: "fix",
     name: "Fix",
-    description: "repair, tool, wrench, mend, broken",
+    description: "fix, repair, screwdriver, tool, mend",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/fix.png",
@@ -1416,7 +1415,7 @@ window.ILLUSTRATIONS = [
   {
     id: "flute",
     name: "Flute",
-    description: "music, instrument, wind, melody, pipe",
+    description: "flute, music, instrument, wind, melody",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/flute.png",
@@ -1426,8 +1425,8 @@ window.ILLUSTRATIONS = [
   {
     id: "fly",
     name: "Fly",
-    description: "insect, wings, buzz, small, air",
-    tags: ["object"],
+    description: "fly, insect, wings, buzz, bug",
+    tags: ["animal"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/fly.png",
     sourceMime: "image/png",
@@ -1463,7 +1462,7 @@ window.ILLUSTRATIONS = [
   {
     id: "fox",
     name: "Fox",
-    description: "animal, orange, mammal, wild, clever",
+    description: "fox, animal, mammal, orange, wild",
     tags: ["animal"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/fox.png",
@@ -1518,7 +1517,7 @@ window.ILLUSTRATIONS = [
   {
     id: "full",
     name: "Full",
-    description: "complete, filled, whole, maximum, plenty",
+    description: "full, glass, water, filled, drink",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/full.png",
@@ -1672,7 +1671,7 @@ window.ILLUSTRATIONS = [
   {
     id: "hen",
     name: "Hen",
-    description: "chicken, farm, bird, egg, animal",
+    description: "hen, chicken, farm, bird, egg",
     tags: ["animal"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/hen.png",
@@ -1718,7 +1717,7 @@ window.ILLUSTRATIONS = [
   {
     id: "honk",
     name: "Honk",
-    description: "horn, sound, loud, car, noise",
+    description: "honk, horn, sound, bulb, noise",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/honk.png",
@@ -1836,8 +1835,8 @@ window.ILLUSTRATIONS = [
   {
     id: "jazz",
     name: "Jazz",
-    description: "music, improvisation, swing, notes, band",
-    tags: ["object"],
+    description: "jazz, saxophone, music, musician, band",
+    tags: ["people"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/jazz.png",
     sourceMime: "image/png",
@@ -1891,7 +1890,7 @@ window.ILLUSTRATIONS = [
   {
     id: "kiss",
     name: "Kiss",
-    description: "love, lips, affection, romance, soft",
+    description: "kiss, lips, love, hearts, affection",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/kiss.png",
@@ -1955,7 +1954,7 @@ window.ILLUSTRATIONS = [
   {
     id: "lemur",
     name: "Lemur",
-    description: "animal, primate, ringtail, wild, mammal",
+    description: "lemur, primate, animal, ringtail, mammal",
     tags: ["animal"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/lemur.png",
@@ -1983,7 +1982,7 @@ window.ILLUSTRATIONS = [
   {
     id: "light",
     name: "Light",
-    description: "lamp, bright, glow, illuminate, bulb",
+    description: "light, lamp, bright, bulb, glow",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/light.png",
@@ -2002,7 +2001,7 @@ window.ILLUSTRATIONS = [
   {
     id: "lips",
     name: "Lips",
-    description: "mouth, kiss, smile, face, pink",
+    description: "lips, mouth, kiss, smile, red",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/lips.png",
@@ -2039,7 +2038,7 @@ window.ILLUSTRATIONS = [
   {
     id: "log",
     name: "Log",
-    description: "wood, tree, forest, trunk, nature",
+    description: "log, wood, tree, timber, forest",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/log.png",
@@ -2076,7 +2075,7 @@ window.ILLUSTRATIONS = [
   {
     id: "lung",
     name: "Lung",
-    description: "body, breath, organ, health, anatomy",
+    description: "lung, breath, organ, anatomy, health",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/lung.png",
@@ -2104,7 +2103,7 @@ window.ILLUSTRATIONS = [
   {
     id: "map",
     name: "Map",
-    description: "travel, location, geography, route, explore",
+    description: "map, travel, geography, route, location",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/map.png",
@@ -2204,7 +2203,7 @@ window.ILLUSTRATIONS = [
   {
     id: "moss",
     name: "Moss",
-    description: "green, plant, nature, forest, soft",
+    description: "moss, green, plant, stones, nature",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/moss.png",
@@ -2214,7 +2213,7 @@ window.ILLUSTRATIONS = [
   {
     id: "motorcycle",
     name: "Motorcycle",
-    tags: ["object"],
+    tags: ["vehicle"],
     illustrator: null,
     previewUrl: "assets/placeholders/placeholder-11.png",
     sourceMime: "image/png",
@@ -2295,8 +2294,8 @@ window.ILLUSTRATIONS = [
   {
     id: "nap",
     name: "Nap",
-    description: "sleep, rest, sofa, tired, quiet",
-    tags: ["object"],
+    description: "nap, sleep, rest, couch, person",
+    tags: ["people"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/nap.png",
     sourceMime: "image/png",
@@ -2332,7 +2331,7 @@ window.ILLUSTRATIONS = [
   {
     id: "night",
     name: "Night",
-    description: "moon, stars, dark, evening, sky",
+    description: "night, moon, stars, dark, evening",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/night.png",
@@ -2477,7 +2476,7 @@ window.ILLUSTRATIONS = [
   {
     id: "paw",
     name: "Paw",
-    description: "animal, footprint, pet, print, claw",
+    description: "paw, print, footprint, animal, claw",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/paw.png",
@@ -2487,7 +2486,7 @@ window.ILLUSTRATIONS = [
   {
     id: "pear",
     name: "Pear",
-    description: "fruit, food, yellow, sweet, fresh",
+    description: "pear, fruit, sweet, fresh, food",
     tags: ["food"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/pear.png",
@@ -2497,7 +2496,7 @@ window.ILLUSTRATIONS = [
   {
     id: "pencil",
     name: "Pencil",
-    description: "write, draw, school, graphite, tool",
+    description: "pencil, write, draw, school, graphite",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/pencil.png",
@@ -2507,7 +2506,7 @@ window.ILLUSTRATIONS = [
   {
     id: "penny",
     name: "Penny",
-    description: "coin, money, copper, cent, currency",
+    description: "penny, coin, money, copper, cent",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/penny.png",
@@ -2535,7 +2534,7 @@ window.ILLUSTRATIONS = [
   {
     id: "person-athlete",
     name: "Person, Athlete",
-    description: "sport, person, fitness, run, active",
+    description: "athlete, sport, soccer, run, fitness",
     tags: ["people"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/person-athlete.png",
@@ -2553,9 +2552,8 @@ window.ILLUSTRATIONS = [
   },
   {
     id: "person-balancing-shapes-compare",
-    name: "Person balancing shapes",
+    name: "Person balancing shapes (\"Compare\")",
     description: "compare, balance, shapes, person, equal",
-    subtitle: "(\"Compare\")",
     tags: ["people"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/person-balancing-shapes-compare.png",
@@ -2691,7 +2689,7 @@ window.ILLUSTRATIONS = [
   {
     id: "pie",
     name: "Pie",
-    description: "dessert, food, sweet, pastry, baked",
+    description: "pie, dessert, pastry, baked, sweet",
     tags: ["food"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/pie.png",
@@ -2701,8 +2699,8 @@ window.ILLUSTRATIONS = [
   {
     id: "piggy-bank",
     name: "Piggy Bank",
-    description: "money, savings, pig, coin, bank",
-    tags: ["animal"],
+    description: "piggy bank, savings, money, coin, bank",
+    tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/piggy-bank.png",
     sourceMime: "image/png",
@@ -2711,7 +2709,7 @@ window.ILLUSTRATIONS = [
   {
     id: "pin",
     name: "Pin",
-    description: "point, stick, marker, metal, attach",
+    description: "pin, marker, point, attach, metal",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/pin.png",
@@ -2721,8 +2719,8 @@ window.ILLUSTRATIONS = [
   {
     id: "plane",
     name: "Plane",
-    description: "airplane, fly, travel, sky, transport",
-    tags: ["object"],
+    description: "plane, airplane, fly, travel, aircraft",
+    tags: ["vehicle"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/plane.png",
     sourceMime: "image/png",
@@ -2776,7 +2774,7 @@ window.ILLUSTRATIONS = [
   {
     id: "pop",
     name: "Pop",
-    description: "burst, balloon, sound, sudden, surprise",
+    description: "pop, balloon, burst, needle, surprise",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/pop.png",
@@ -2786,7 +2784,7 @@ window.ILLUSTRATIONS = [
   {
     id: "pot",
     name: "Pot",
-    description: "cook, kitchen, pot, food, stove",
+    description: "pot, cook, kitchen, lid, stove",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/pot.png",
@@ -2840,10 +2838,9 @@ window.ILLUSTRATIONS = [
   },
   {
     id: "puzzle-piece-with-question-mark-challenge",
-    name: "Puzzle piece with question mark",
+    name: "Puzzle piece with question mark (\"Challenge\")",
     description: "puzzle, challenge, question, pieces, solve",
-    subtitle: "(\"Challenge\")",
-    tags: ["food"],
+    tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/puzzle-piece-with-question-mark-challenge.png",
     sourceMime: "image/png",
@@ -2924,7 +2921,7 @@ window.ILLUSTRATIONS = [
   {
     id: "rat",
     name: "Rat",
-    description: "animal, rodent, mammal, whiskers, gray",
+    description: "rat, rodent, animal, mammal, whiskers",
     tags: ["animal"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/rat.png",
@@ -2970,7 +2967,7 @@ window.ILLUSTRATIONS = [
   {
     id: "road",
     name: "Road",
-    description: "street, path, travel, asphalt, drive",
+    description: "road, street, path, asphalt, drive",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/road.png",
@@ -3034,8 +3031,8 @@ window.ILLUSTRATIONS = [
   {
     id: "sank",
     name: "Sank",
-    description: "ship, sink, ocean, waves, underwater",
-    tags: ["object"],
+    description: "sank, ship, boat, ocean, vessel",
+    tags: ["vehicle"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/sank.png",
     sourceMime: "image/png",
@@ -3071,7 +3068,7 @@ window.ILLUSTRATIONS = [
   {
     id: "sell",
     name: "Sell",
-    description: "shop, money, trade, bag, exchange",
+    description: "sell, shop, money, trade, purchase",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/sell.png",
@@ -3090,7 +3087,7 @@ window.ILLUSTRATIONS = [
   {
     id: "sheep",
     name: "Sheep",
-    description: "animal, wool, farm, mammal, fluffy",
+    description: "sheep, wool, farm, animal, fluffy",
     tags: ["animal"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/sheep.png",
@@ -3100,7 +3097,7 @@ window.ILLUSTRATIONS = [
   {
     id: "shell",
     name: "Shell",
-    description: "ocean, beach, seashell, nature, spiral",
+    description: "shell, seashell, beach, ocean, scallop",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/shell.png",
@@ -3164,7 +3161,7 @@ window.ILLUSTRATIONS = [
   {
     id: "sink",
     name: "Sink",
-    description: "faucet, water, kitchen, wash, plumbing",
+    description: "sink, faucet, wash, water, plumbing",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/sink.png",
@@ -3174,8 +3171,8 @@ window.ILLUSTRATIONS = [
   {
     id: "sip",
     name: "Sip",
-    description: "drink, straw, cup, beverage, taste",
-    tags: ["object"],
+    description: "sip, drink, straw, cup, beverage",
+    tags: ["people"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/sip.png",
     sourceMime: "image/png",
@@ -3184,7 +3181,7 @@ window.ILLUSTRATIONS = [
   {
     id: "skunk",
     name: "Skunk",
-    description: "animal, black, white, stripe, mammal",
+    description: "skunk, animal, stripe, black, white",
     tags: ["animal"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/skunk.png",
@@ -3275,7 +3272,7 @@ window.ILLUSTRATIONS = [
   {
     id: "soap",
     name: "Soap",
-    description: "clean, wash, bubbles, bath, foam",
+    description: "soap, clean, wash, bubbles, bath",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/soap.png",
@@ -3456,7 +3453,7 @@ window.ILLUSTRATIONS = [
   {
     id: "swings",
     name: "Swings",
-    description: "playground, play, outdoor, fun, park",
+    description: "swings, playground, park, fun, play",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/swings.png",
@@ -3529,7 +3526,7 @@ window.ILLUSTRATIONS = [
   {
     id: "teeth",
     name: "Teeth",
-    description: "tooth, smile, dental, white, mouth",
+    description: "teeth, tooth, dental, smile, mouth",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/teeth.png",
@@ -3719,7 +3716,7 @@ window.ILLUSTRATIONS = [
   {
     id: "tractor",
     name: "Tractor",
-    tags: ["object"],
+    tags: ["vehicle"],
     illustrator: null,
     previewUrl: "assets/placeholders/placeholder-04.png",
     sourceMime: "image/png",
@@ -3728,8 +3725,8 @@ window.ILLUSTRATIONS = [
   {
     id: "train",
     name: "Train",
-    description: "railway, transport, tracks, travel, engine",
-    tags: ["object"],
+    description: "train, locomotive, railway, engine, tracks",
+    tags: ["vehicle"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/train.png",
     sourceMime: "image/png",
@@ -3864,7 +3861,7 @@ window.ILLUSTRATIONS = [
   {
     id: "van",
     name: "Van",
-    tags: ["object"],
+    tags: ["vehicle"],
     illustrator: null,
     previewUrl: "assets/placeholders/placeholder-01.png",
     sourceMime: "image/png",
@@ -3972,7 +3969,7 @@ window.ILLUSTRATIONS = [
   {
     id: "wink",
     name: "Wink",
-    description: "eye, face, playful, emoji, expression",
+    description: "wink, eye, face, playful, expression",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/wink.png",
@@ -4036,7 +4033,7 @@ window.ILLUSTRATIONS = [
   {
     id: "zip",
     name: "Zip",
-    description: "zipper, close, clothing, fastener, pull",
+    description: "zip, zipper, fastener, clothing, close",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/zip.png",

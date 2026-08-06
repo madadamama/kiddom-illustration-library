@@ -29,6 +29,7 @@
 
   const iconGrid = document.getElementById("icon-grid");
   const searchInput = document.getElementById("search-input");
+  const searchClear = document.getElementById("search-clear");
   const addBtn = document.getElementById("add-btn");
   const addDialog = document.getElementById("add-dialog");
   const addForm = document.getElementById("add-form");
@@ -355,9 +356,26 @@
     setSelectedStyles();
   }
 
+  function syncSearchClear() {
+    if (!searchClear) {
+      return;
+    }
+    searchClear.hidden = !searchInput.value;
+  }
+
   searchInput.addEventListener("input", () => {
+    syncSearchClear();
     refresh();
   });
+
+  if (searchClear) {
+    searchClear.addEventListener("click", () => {
+      searchInput.value = "";
+      syncSearchClear();
+      refresh();
+      searchInput.focus();
+    });
+  }
 
   detailClose.addEventListener("click", closeDetail);
 

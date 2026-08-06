@@ -6,7 +6,7 @@
     <title>Kiddom Illustration Library</title>
     <link rel="icon" type="image/png" href="assets/icons/favicon.png" />
     <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
-    <link rel="stylesheet" href="css/styles.css?v=gate1" />
+    <link rel="stylesheet" href="css/styles.css?v=searchclear2" />
   </head>
   <body>
     <div id="site-gate" class="site-gate" role="dialog" aria-modal="true" aria-labelledby="site-gate-title">
@@ -31,15 +31,26 @@
 
     <header class="site-header">
       <h1 class="site-title">Kiddom</h1>
-      <label class="header-search">
-        <span class="visually-hidden">Search illustrations</span>
-        <input
-          id="search-input"
-          type="search"
-          placeholder="Search"
-          autocomplete="off"
-        />
-      </label>
+      <div class="header-search">
+        <div class="header-search__field">
+          <label class="visually-hidden" for="search-input">Search illustrations</label>
+          <input
+            id="search-input"
+            type="search"
+            placeholder="Search"
+            autocomplete="off"
+          />
+          <button
+            type="button"
+            id="search-clear"
+            class="header-search__clear"
+            aria-label="Clear search"
+            hidden
+          >
+            ×
+          </button>
+        </div>
+      </div>
     </header>
 
     <main class="site-main">
@@ -153,7 +164,7 @@
     </dialog>
 
     <script src="js/gate.js?v=gate1"></script>
-    <script src="js/data.js?v=detail6"></script>
-    <script src="js/app.js?v=detail6"></script>
+    <script src="js/data.js?v=tags6"></script>
+    <script src="js/app.js?v=searchclear1"></script>
   </body>
 </html>
