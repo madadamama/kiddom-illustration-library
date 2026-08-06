@@ -651,6 +651,7 @@ body.detail-open .icon-grid {
 }
 
 .detail-panel__credit {
+  display: none;
   margin: 0.35rem 0 0;
   font-family: var(--font-circular-mono);
   font-size: var(--label-type-size);
