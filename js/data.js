@@ -3323,8 +3323,8 @@ window.ILLUSTRATIONS = [
   },
   {
     id: "ring",
-    name: "Ring",
-    description: "circle, jewelry, band, loop",
+    name: "Ring (Phone)",
+    description: "call, alert, ringtone, notification",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/ring.png",
