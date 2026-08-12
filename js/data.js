@@ -1374,11 +1374,14 @@ window.ILLUSTRATIONS = [
   {
     id: "earring",
     name: "Earring",
+    description: "jewelry, hoop, piercing, accessory",
     tags: ["object"],
-    illustrator: null,
-    previewUrl: "assets/placeholders/placeholder-15.png",
+    illustrator: "Kemal Sanli",
+    previewUrl: "assets/illustrations/earring.png",
+    aiUrl: "assets/vectors/earring.ai",
+    aiFileName: "earring.ai",
     sourceMime: "image/png",
-    status: "needed",
+    status: "done",
   },
   {
     id: "egg",
