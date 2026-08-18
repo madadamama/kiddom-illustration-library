@@ -433,7 +433,7 @@ window.ILLUSTRATIONS = [
     id: "blocks",
     name: "Blocks",
     description: "toys, stack, build, cubes",
-    tags: ["object"],
+    tags: ["object", "toy"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/blocks.png?v=1to150",
     aiUrl: "assets/vectors/blocks.ai",
