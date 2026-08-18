@@ -277,16 +277,15 @@
       return true;
     }
     const q = query.toLowerCase();
-    if (item.name.toLowerCase().includes(q)) {
-      return true;
-    }
-    if (item.subtitle && String(item.subtitle).toLowerCase().includes(q)) {
-      return true;
-    }
-    if (item.description && String(item.description).toLowerCase().includes(q)) {
-      return true;
-    }
-    return (item.tags || []).some((tag) => String(tag).toLowerCase().includes(q));
+    const fields = [
+      item.name,
+      item.subtitle,
+      item.description,
+      ...(item.tags || []),
+    ];
+    const escaped = q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const pattern = new RegExp(`(?:^|[^a-z0-9])${escaped}(?:$|[^a-z0-9])`, "i");
+    return fields.some((field) => field && pattern.test(String(field)));
   }
 
   function refresh() {
