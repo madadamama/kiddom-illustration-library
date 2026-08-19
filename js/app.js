@@ -284,7 +284,7 @@
       ...(item.tags || []),
     ];
     const escaped = q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    const pattern = new RegExp(`(?:^|[^a-z0-9])${escaped}(?:$|[^a-z0-9])`, "i");
+    const pattern = new RegExp(`(?:^|[^a-z0-9])${escaped}`, "i");
     return fields.some((field) => field && pattern.test(String(field)));
   }
 
