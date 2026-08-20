@@ -916,18 +916,6 @@ window.ILLUSTRATIONS = [
     status: "done",
   },
   {
-    id: "caught",
-    name: "Caught",
-    description: "fish, song, music, catch",
-    tags: ["animal"],
-    illustrator: "Kemal Sanli",
-    previewUrl: "assets/illustrations/caught.png?v=301345",
-    aiUrl: "assets/vectors/caught.ai",
-    aiFileName: "caught.ai",
-    sourceMime: "image/png",
-    status: "done",
-  },
-  {
     id: "ceiling",
     name: "Ceiling",
     description: "roof, overhead, indoor, room",
