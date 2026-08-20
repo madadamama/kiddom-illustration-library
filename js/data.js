@@ -2572,18 +2572,6 @@ window.ILLUSTRATIONS = [
     status: "done",
   },
   {
-    id: "less",
-    name: "Less",
-    description: "fewer, minus, reduce, shapes",
-    tags: ["object"],
-    illustrator: "Kemal Sanli",
-    previewUrl: "assets/illustrations/less.png?v=301345",
-    aiUrl: "assets/vectors/less.ai",
-    aiFileName: "less.ai",
-    sourceMime: "image/png",
-    status: "done",
-  },
-  {
     id: "lid",
     name: "Lid",
     description: "cover, cap, close, top",
