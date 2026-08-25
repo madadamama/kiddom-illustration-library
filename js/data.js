@@ -2644,6 +2644,18 @@ window.ILLUSTRATIONS = [
     status: "done",
   },
   {
+    id: "lion-outline",
+    name: "Lion, outline",
+    description: "mane, roar, outline, cat",
+    tags: ["animal"],
+    illustrator: "Kemal Sanli",
+    previewUrl: "assets/illustrations/lion-outline.png?v=400502",
+    aiUrl: "assets/vectors/lion-outline.ai",
+    aiFileName: "lion-outline.ai",
+    sourceMime: "image/png",
+    status: "done",
+  },
+  {
     id: "lips",
     name: "Lips",
     description: "mouth, kiss, smile, red",
