@@ -1800,7 +1800,7 @@ window.ILLUSTRATIONS = [
     description: "swim, aquatic, outline, ocean",
     tags: ["object"],
     illustrator: "Kemal Sanli",
-    previewUrl: "assets/illustrations/fish-outline.png?v=400494",
+    previewUrl: "assets/illustrations/fish-outline.png?v=400502b",
     aiUrl: "assets/vectors/fish-outline.ai",
     aiFileName: "fish-outline.ai",
     sourceMime: "image/png",
