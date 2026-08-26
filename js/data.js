@@ -4953,11 +4953,14 @@ window.ILLUSTRATIONS = [
   {
     id: "toll",
     name: "Toll",
+    description: "booth, gate, pay, barrier",
     tags: ["object"],
-    illustrator: null,
-    previewUrl: "assets/placeholders/placeholder-16.png",
+    illustrator: "Kemal Sanli",
+    previewUrl: "assets/illustrations/toll.png?v=301345",
+    aiUrl: "assets/vectors/toll.ai",
+    aiFileName: "toll.ai",
     sourceMime: "image/png",
-    status: "needed",
+    status: "done",
   },
   {
     id: "tongs",
