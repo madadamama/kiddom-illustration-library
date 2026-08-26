@@ -4704,7 +4704,7 @@ window.ILLUSTRATIONS = [
     description: "conversation, speech, bubbles, turns",
     tags: ["object"],
     illustrator: "Kemal Sanli",
-    previewUrl: "assets/illustrations/take-turns-speaking.png?v=taketurns2",
+    previewUrl: "assets/illustrations/take-turns-speaking.png?v=taketurns3",
     aiUrl: "assets/vectors/take-turns-speaking.ai",
     aiFileName: "take-turns-speaking.ai",
     sourceMime: "image/png",
