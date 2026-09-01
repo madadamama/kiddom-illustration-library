@@ -607,6 +607,18 @@ window.ILLUSTRATIONS = [
     status: "done",
   },
   {
+    id: "brain",
+    name: "Brain",
+    description: "mind, think, organ, idea",
+    tags: ["object", "head"],
+    illustrator: "Kemal Sanli",
+    previewUrl: "assets/illustrations/brain.png?v=400505",
+    aiUrl: "assets/vectors/brain.ai",
+    aiFileName: "brain.ai",
+    sourceMime: "image/png",
+    status: "done",
+  },
+  {
     id: "brain-gear-with-gauge-think-about-thinking",
     name: "Think about thinking",
     description: "brain/gear with gauge, metacognition, reflect, mind",
