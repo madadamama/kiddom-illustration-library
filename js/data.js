@@ -5421,11 +5421,14 @@ window.ILLUSTRATIONS = [
   {
     id: "yell",
     name: "Yell",
-    tags: ["object"],
-    illustrator: null,
-    previewUrl: "assets/placeholders/placeholder-15.png",
+    description: "shout, call, loud, voice",
+    tags: ["people"],
+    illustrator: "Kemal Sanli",
+    previewUrl: "assets/illustrations/yell.png?v=301345",
+    aiUrl: "assets/vectors/yell.ai",
+    aiFileName: "yell.ai",
     sourceMime: "image/png",
-    status: "needed",
+    status: "done",
   },
   {
     id: "zebra",
