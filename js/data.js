@@ -219,7 +219,7 @@ window.ILLUSTRATIONS = [
   {
     id: "basketball",
     name: "Basketball",
-    description: "sport, bounce, court, hoop",
+    description: "ball, sport, court, hoop",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/basketball.png?v=151494",
@@ -3300,7 +3300,7 @@ window.ILLUSTRATIONS = [
   {
     id: "narrator",
     name: "Narrator",
-    description: "voice, guide, speaker, location",
+    description: "person, voice, guide, location",
     tags: ["people"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/narrator.png?v=346399",
@@ -5091,7 +5091,7 @@ window.ILLUSTRATIONS = [
     description: "flame, wax, light, glow",
     tags: ["object"],
     illustrator: "Kemal Sanli",
-    previewUrl: "assets/illustrations/three-candles.png?v=covers1",
+    previewUrl: "assets/illustrations/three-candles.png?v=346399c",
     aiUrl: "assets/vectors/three-candles.ai",
     aiFileName: "three-candles.ai",
     sourceMime: "image/png",
