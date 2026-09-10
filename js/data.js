@@ -559,6 +559,18 @@ window.ILLUSTRATIONS = [
     status: "done",
   },
   {
+    id: "book-with-globe",
+    name: "Book, with globe",
+    description: "reading, globe, earth, world",
+    tags: ["object"],
+    illustrator: "Kemal Sanli",
+    previewUrl: "assets/illustrations/book-with-globe.png?v=sep10",
+    aiUrl: "assets/vectors/book-with-globe.ai",
+    aiFileName: "book-with-globe.ai",
+    sourceMime: "image/png",
+    status: "done",
+  },
+  {
     id: "book-icon-lines",
     name: "Book, with lines",
     description: "reading, lines, pages, text",
