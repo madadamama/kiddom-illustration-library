@@ -2349,7 +2349,7 @@ window.ILLUSTRATIONS = [
     description: "phone, map, navigation, braille",
     tags: ["object"],
     illustrator: "Kemal Sanli",
-    previewUrl: "assets/illustrations/hello-navi.png?v=346399",
+    previewUrl: "assets/illustrations/hello-navi.png?v=sep10",
     aiUrl: "assets/vectors/hello-navi.ai",
     aiFileName: "hello-navi.ai",
     sourceMime: "image/png",
