@@ -1275,7 +1275,7 @@ window.ILLUSTRATIONS = [
   {
     id: "collaborative-discussion-questions",
     name: "Collaborative Discussion Questions",
-    description: "teamwork, discuss, questions, together",
+    description: "collaboration, teamwork, discuss, questions",
     tags: ["people", "collaboration"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/collaborative-discussion-questions.png?v=151494",
