@@ -2596,6 +2596,18 @@ window.ILLUSTRATIONS = [
     status: "done",
   },
   {
+    id: "hexagon",
+    name: "Hexagon",
+    description: "shape, six sides, geometry, polygon",
+    tags: ["object"],
+    illustrator: "Kemal Sanli",
+    previewUrl: "assets/illustrations/hexagon.png?v=dropbox101",
+    aiUrl: "assets/vectors/hexagon.ai",
+    aiFileName: "hexagon.ai",
+    sourceMime: "image/png",
+    status: "done",
+  },
+  {
     id: "hiss",
     name: "Hiss",
     description: "snake, sound, warning, spit",
