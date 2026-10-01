@@ -466,18 +466,6 @@ window.ILLUSTRATIONS = [
     status: "done",
   },
   {
-    id: "binoculars",
-    name: "Binoculars",
-    description: "watch, spy, zoom, observe",
-    tags: ["object"],
-    illustrator: "Kemal Sanli",
-    previewUrl: "assets/illustrations/binoculars.png?v=346410",
-    aiUrl: "assets/vectors/binoculars.ai",
-    aiFileName: "binoculars.ai",
-    sourceMime: "image/png",
-    status: "done",
-  },
-  {
     id: "bird",
     name: "Bird",
     description: "wings, feather, avian, fly",
