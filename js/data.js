@@ -655,6 +655,18 @@ window.ILLUSTRATIONS = [
     status: "done",
   },
   {
+    id: "book-with-lock",
+    name: "Book, with lock",
+    description: "reading, lock, secure, closed",
+    tags: ["object"],
+    illustrator: "Kemal Sanli",
+    previewUrl: "assets/illustrations/book-with-lock.png?v=dropbox101",
+    aiUrl: "assets/vectors/book-with-lock.ai",
+    aiFileName: "book-with-lock.ai",
+    sourceMime: "image/png",
+    status: "done",
+  },
+  {
     id: "books-stack",
     name: "Books, stack",
     description: "reading, pile, library, study",
