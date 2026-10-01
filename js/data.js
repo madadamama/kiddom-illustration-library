@@ -468,7 +468,7 @@ window.ILLUSTRATIONS = [
   {
     id: "binoculars",
     name: "Binoculars",
-    description: "watch, spy, zoom, observe, lens",
+    description: "watch, spy, zoom, observe",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/binoculars.png?v=346410",
