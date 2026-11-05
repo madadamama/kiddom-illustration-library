@@ -2145,7 +2145,7 @@ window.ILLUSTRATIONS = [
   {
     id: "field",
     name: "Field",
-    description: "grass, landscape, nature, outdoor",
+    description: "landscape, nature, tree, sun",
     tags: ["object"],
     illustrator: "Kemal Sanli",
     previewUrl: "assets/illustrations/field.png?v=1to150",
