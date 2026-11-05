@@ -5665,6 +5665,18 @@ window.ILLUSTRATIONS = [
     status: "done",
   },
   {
+    id: "stubborn",
+    name: "Stubborn",
+    description: "stubborn, ignore, ears, refuse",
+    tags: ["people"],
+    illustrator: "Kemal Sanli",
+    previewUrl: "assets/illustrations/stubborn.png?v=346410i",
+    aiUrl: "assets/vectors/stubborn.ai",
+    aiFileName: "stubborn.ai",
+    sourceMime: "image/png",
+    status: "done",
+  },
+  {
     id: "student-with-backpack",
     name: "Student, with backpack",
     description: "backpack, walk, school, student",
