@@ -3208,6 +3208,18 @@ window.ILLUSTRATIONS = [
     status: "done",
   },
   {
+    id: "landscape",
+    name: "Landscape",
+    description: "landscape, hills, trees, sun",
+    tags: ["object"],
+    illustrator: "Kemal Sanli",
+    previewUrl: "assets/illustrations/landscape.png?v=346410h",
+    aiUrl: "assets/vectors/landscape.ai",
+    aiFileName: "landscape.ai",
+    sourceMime: "image/png",
+    status: "done",
+  },
+  {
     id: "last-of-three",
     name: "Last of three",
     description: "sequence, last, order, series",
